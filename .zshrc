@@ -171,6 +171,11 @@ fif() {
         --bind 'enter:become(nvim {1} +{2})'
 }
 
+kport() {
+  local port-"$1"
+  lsof -tiTCP:"$port" -sTCP:LISTEN | xargs kill -9
+}
+
 
 # ==============================================================================
 # LOCAL ENV & SECRETS
