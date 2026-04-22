@@ -1,6 +1,9 @@
 # Keep the prompt on a single line
 add_newline = false
 
+# Give git-backed modules more time before Starship warns.
+command_timeout = 2000
+
 # EXPLICIT FORMAT: This completely removes all "bloat" by only loading these exact 4 modules
 format = "$directory$git_branch$git_status$character"
 
